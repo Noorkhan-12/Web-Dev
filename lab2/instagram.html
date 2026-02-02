@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 30px;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      padding: 40px 20px;
+    }
+
+    .collage img {
+      width: 500px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .login-box {
+      width: 350px;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 36px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    input {
+      margin: 5px 0;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 3px;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    button {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #0095f6;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .facebook-login {
+      background-color: #385185;
+    }
+
+    a {
+      font-size: 12px;
+      color: #80bfff;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #aaaaaa;
+      font-size: 12px;
+      margin: 15px 0;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #333;
+    }
+
+    .divider:not(:empty)::before {
+      margin-right: .75em;
+    }
+
+    .divider:not(:empty)::after {
+      margin-left: .75em;
+    }
+
+    .signup {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #e0e0e0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+      color: #aaaaaa;
+      border-top: 1px solid #333;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    footer ul li a {
+      color: #aaaaaa;
+      text-decoration: none;
+    }
+
+    .language select {
+      background-color: #2c2c2c;
+      color: #e0e0e0;
+      border: 1px solid #333;
+      padding: 5px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="instalogo.jpg" alt="Instagram logo">
+  </header>
+
+  <div class="container">
+    <div class="collage">
+      <img src="insta.png" alt="Instagram collage">
+    </div>
+
+    <div class="login-box">
+      <div class="logo">Instagram</div>
+      <form>
+        <input type="text" placeholder="Phone number, username, or email">
+        <input type="password" placeholder="Password">
+        <button type="submit">Log In</button>
+        <div class="divider">OR</div>
+        <button class="facebook-login">Log in with Facebook</button>
+        <a href="#">Forgot password?</a>
+      </form>
+      <div class="signup">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href="#">Meta</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">API</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">Instagram Lite</a></li>
+      <li><a href="#">Meta AI</a></li>
+      <li><a href="#">Threads</a></li>
+      <li><a href="#">Contact Uploading & Non-Users</a></li>
+      <li><a href="#">Meta Verified</a></li>
+    </ul>
+    <div class="language">
+      <select>
+        <option>English</option>
+        <option>Русский</option>
+        <option>Español</option>
+        <option>Français</option>
+      </select>
+    </div>
+    <p>© 2026 Instagram from Meta</p>
+  </footer>
+</body>
+</html>
