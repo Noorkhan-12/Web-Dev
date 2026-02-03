@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Pricing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .nav-left {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-left a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .nav-right a {
+      text-decoration: none;
+      color: #0366d6;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .search {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background-color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+    }
+
+    .hero button {
+      background-color: #000; /* black button */
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero button:hover {
+      background-color: #333;
+    }
+
+    /* Pricing Section */
+    .pricing-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      padding: 60px 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #e1e4e8;
+      border-radius: 8px;
+      padding: 30px;
+      width: 320px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    .card .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .card .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .card button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .card button:hover {
+      background-color: #333;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex: 1;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .badge {
+      background-color: #ffd33d;
+      color: #000;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+
+    .addons-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #0366d6;
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-left">
+      <a href="#">Platform</a>
+      <a href="#">Solutions</a>
+      <a href="#">Resources</a>
+      <a href="#">Open Source</a>
+      <a href="#">Enterprise</a>
+      <a href="#">Pricing</a>
+    </div>
+    <div class="nav-right">
+      <input type="text" class="search" placeholder="Search or jump to...">
+      <a href="#">Sign in</a>
+      <a href="#">Sign up</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Try the Copilot-powered platform</h1>
+    <p>We get it, there's a lot you can do with GitHub. That's why we've packed all of it into a single risk-free trial that includes GitHub Enterprise, Copilot, and Advanced Security.</p>
+    <button>Start free for 30 days</button>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <!-- Free Card -->
+    <div class="card">
+      <h2>Free</h2>
+      <div class="subtitle">The basics for individuals and organizations</div>
+      <div class="price">$0 USD/user/month</div>
+      <button>Join for free</button>
+      <ul>
+        <li>Unlimited public/private repositories</li>
+        <li>Dependabot security updates</li>
+        <li>2,000 CI/CD minutes/month</li>
+        <li>500MB Packages storage</li>
+        <li>Issues & Projects</li>
+        <li>Community support</li>
+      </ul>
+      <div class="addons-title">FEATURED ADD-ONS</div>
+      <ul>
+        <li>GitHub Copilot Access</li>
+        <li>GitHub Codespaces Access</li>
+      </ul>
+    </div>
+
+    <!-- Team Card -->
+    <div class="card">
+      <h2>Team</h2>
+      <div class="subtitle">Advanced collaboration for individuals and organizations</div>
+      <div class="price">$4 USD/user/month</div>
+      <button>Continue with Team</button>
+      <ul>
+        <li>Everything in Free</li>
+        <li>Access to Codespaces</li>
+        <li>Repository rules</li>
+        <li>Multiple reviewers</li>
+        <li>Draft pull requests</li>
+        <li>Code owners</li>
+        <li>Required reviewers</li>
+        <li>Pages and wikis</li>
+        <li>3,000 CI/CD minutes/month</li>
+        <li>2GB Packages storage</li>
+        <li>Web-based support</li>
+      </ul>
+    </div>
+
+    <!-- Enterprise Card -->
+    <div class="card">
+      <div class="badge">RECOMMENDED</div>
+      <h2>Enterprise</h2>
+      <div class="subtitle">Security, compliance, and flexible deployment</div>
+      <div class="price">Starting at $21 USD/user/month</div>
+      <button>Start a free trial</button>
+      <button>Contact Sales</button>
+      <ul>
+        <li>Everything in Team</li>
+        <li>Data residency</li>
+        <li>Managed Users</li>
+        <li>SCIM provisioning</li>
+        <li>Enterprise Account</li>
+        <li>Environment protection rules</li>
+        <li>Audit Log API</li>
+        <li>SOC1, SOC2 reports</li>
+        <li>FedRAMP ATO</li>
+        <li>SAML SSO</li>
+        <li>Advanced auditing</li>
+        <li>GitHub Connect</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>
